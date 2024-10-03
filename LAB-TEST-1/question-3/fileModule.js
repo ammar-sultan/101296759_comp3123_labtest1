@@ -17,7 +17,7 @@ function removeAllLogFiles() {
     for (let i = 0; i < AllFiles.length; i++) {
       const fileMainPath = path.join(LogDirectory, AllFiles[i]);
       fs.unlinkSync(fileMainPath);
-      console.log("Deleted file: " + AllFiles[i]);
+      console.log("delete files... " + AllFiles[i]);
     }
     fs.rmdirSync(LogDirectory);
     console.log("Logs directory removed successfully");
